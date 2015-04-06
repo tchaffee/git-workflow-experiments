@@ -8,7 +8,7 @@
 
     // Montage Require
     if (typeof bootstrap === "function") {
-        bootstrap("promise", definition);
+        bootstrap("promiseD", definition);
 
     // CommonJS
     } else if (typeof exports === "object" && typeof module === "object") {
