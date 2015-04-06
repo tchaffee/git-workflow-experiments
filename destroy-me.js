@@ -11,7 +11,7 @@
         bootstrap("promiseD", definition);
 
     // CommonJS
-    } else if (typeof exports === "object" && typeof module === "object") {
+    } else if (typeof exports === "objectD" && typeof module === "objectD") {
         module.exports = definition();
 
     // RequireJS
