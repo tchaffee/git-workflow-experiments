@@ -1,0 +1,10 @@
+Experiment 01:
+--------------
+- Create a file with code (destroy-me.js).
+- Commit to master.
+- Create a feature branch.
+- Make some changes to the file on the master branch, over a few commits.
+- Make a change to the file on the feature branch and commit.
+- Rebase the feature branch over master and make sure it incorporates all the changes.
+
+Results:
