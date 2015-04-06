@@ -1,10 +1,39 @@
-Experiment 01:
+Experiment 01
 --------------
+Normal rebase on master from a feature branch to make sure it pulls new code into the feature.
+
+Steps:
 - Create a file with code (destroy-me.js).
 - Commit to master.
 - Create a feature branch (feature1).
 - Make some changes to the file on the master branch, over a few commits.
 - Make a change to the file on the feature branch and commit.
 - Rebase the feature branch over master and make sure it incorporates all the changes.
+
+Results:
+It worked as expected. Changes from master were brought into the feature branch without issues.
+
+Workflow commands to remember:
+- Beginning of day, checkout and pull latest changes from master:
+git checkout master
+git pull
+- Rebase feature branch over master:
+git checkout feature1
+git rebase master
+
+Experiment 02
+--------------
+Merge conflict. Change the same line of code in both master and a feature branch. Rebase to
+understand what happens.
+
+Steps:
+- Create a new feature2 branch off master.
+- Checkout master.
+- Change a line of code in destroy-me.js.
+- Commit the change to master.
+- Checkout feature2.
+- Change the same line of code, but make a different change.
+- Commit the change.
+- Rebase over master.
 
 Results:
