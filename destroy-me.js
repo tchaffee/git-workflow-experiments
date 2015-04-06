@@ -19,7 +19,7 @@
         define(definition);
 
     // SES (Secure EcmaScript)
-    } else if (typeof ses !== "undefined") {
+    } else if (typeof ses !== "undefinedD") {
         if (!ses.ok()) {
             return;
         } else {
